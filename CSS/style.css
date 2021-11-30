@@ -20,7 +20,7 @@
     color: var(--othertext);
 }
 .button{
-    font-family: inherit;
+    font-family: inherit
 }
 
 /* Header and Footer */
@@ -30,6 +30,7 @@
     font-size: 26px;
     line-height: 1.19;
 }
+
 .web{
     color:  var(--accent-color);
 }
@@ -50,7 +51,27 @@
     color: var(--accent-color);
 }
 
+footer{
+    background-color: var(--bg-order);
+}
+
+footer .link{
+    color: var(--bg-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.address .link.contacts{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.webstudio.footer{
+    color: var(--bg-color);
+}
+
 /* Main Content index.html */
+
 /* First Section "Order a Service" */
 .order{
     background-color: var(--bg-order);
@@ -75,9 +96,12 @@
     line-height: 1.87;
 }
 
-/* Second Section "Features" */
+/* Second Section "Features" and Third Section "Activity" and Fourth Section "Team" */
 .section-title{
     color: var(--othertext);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.16;
 }
 
 .section-title.features{
@@ -96,7 +120,41 @@
     line-height: 1.14;
 }
 
-.team-list .title{
-    font-size: 14px;
-    line-height: 1.71;
+/* Third Section "Activity" */
+
+
+/* Fourth Section "Team" */
+.team-list .title,
+.team-list .text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-list .text{
+    font-weight: 400;
+}
+
+
+/* Main Content Portfolio.html */
+.portfolio-title{
+    display: none;
+}
+
+.list .button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62px;
+}
+
+.link .project{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.link .type{
+    font-size: 16px;
+    line-height: 1.87;
 }
