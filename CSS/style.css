@@ -6,6 +6,11 @@
     --bg-color: #ffffff;
     --bg-order: #2F303A;
 }
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
 
 .content-body{
     color: var(--maintexst);
