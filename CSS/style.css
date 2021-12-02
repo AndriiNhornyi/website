@@ -17,8 +17,30 @@
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+section{
+    margin-bottom: 94px;
+}
+h1,
+h2,
+h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centred{
+    text-align: center;
+}
 .list{
     list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
 .link{
     text-decoration: none;
@@ -26,6 +48,11 @@
 }
 .button{
     font-family: inherit
+}
+.text,
+.title{
+    margin-top: 0px;
+    /* margin-bottom: 0px; */
 }
 
 /* Header and Footer */
@@ -90,6 +117,8 @@ footer .link{
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    margin-top:  0px;
+    margin-bottom: 30px;
 }
 
 .order .link{
@@ -99,6 +128,10 @@ footer .link{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    display: inline-block;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* Second Section "Features" and Third Section "Activity" and Fourth Section "Team" */
@@ -123,6 +156,7 @@ footer .link{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    margin-bottom: 10px;
 }
 
 /* Third Section "Activity" */
