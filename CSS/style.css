@@ -101,6 +101,19 @@ footer .link{
 .webstudio.footer{
     color: var(--bg-color);
 }
+b.join{
+    color: var(--bg-color);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+.link-communication:hover{
+ color: var(--accent-color);
+}
 
 /* Main Content index.html */
 
@@ -176,6 +189,9 @@ footer .link{
 
 
 /* Main Content Portfolio.html */
+.portfolio-header{
+    margin-bottom: 94px;
+}
 .portfolio-title{
     display: none;
 }
