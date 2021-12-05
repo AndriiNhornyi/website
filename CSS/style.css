@@ -52,19 +52,43 @@ h3{
 .text,
 .title{
     margin-top: 0px;
-    /* margin-bottom: 0px; */
+    margin-bottom: 0px;
 }
 
 /* Header and Footer */
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+}
+
 .link.webstudio{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+    display: flex;
+    align-items: center;
 }
 
 .web{
     color:  var(--accent-color);
+}
+.nav .site-nav{
+    display: flex;
+    align-items: center;
+
+    margin-left: 93px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.site-nav .item + .item{
+    margin-left: 50px;
 }
 
 .site-nav .link{
@@ -81,6 +105,28 @@ h3{
 
 .site-nav .link.current{
     color: var(--accent-color);
+}
+
+.list-flex,
+.link-list-header{
+    display: flex;
+}
+
+.list-flex {
+    margin-left: auto;
+}
+
+.list-flex .item + .item{
+    margin-left: 30px;
+}
+
+.link-list-header:hover,
+.link-list-header:focus{
+    color: var(--accent-color);
+}
+
+.link-list-header .icon{
+    margin-right: 10px;
 }
 
 footer{
