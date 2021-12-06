@@ -256,9 +256,34 @@ b.join{
 
 
 /* Fourth Section "Team" */
-/* .section-team{
+.section-team{
     background-color: var(--secondary-bg-color);
-} */
+}
+
+.section-team .section-title{
+    margin-bottom: 50px;
+}
+
+.team-list{
+    display: flex;
+}
+
+.team-list .item{
+    background-color:var(--bg-color);
+    text-align: center;
+}
+
+.team-list .item:not(:last-child){
+    margin-right: 30px;
+}
+
+.icon-team{
+    padding: 12px;
+}
+
+.icon-team:not(:last-child){
+    margin-right: 10px;
+}
 
 .team-list .title,
 .team-list .text{
@@ -267,8 +292,17 @@ b.join{
     line-height: 1.19;
 }
 
+.team-list .title{
+    margin-bottom: 10px;
+}
+
 .team-list .text{
     font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.photo-team{
+    margin-bottom: 30px;
 }
 
 /* Fifth Section Regular Customers */
@@ -320,10 +354,12 @@ b.join{
 .list-project{
     display: flex;
     flex-wrap: wrap;
-    margin: -30px 0px 0px -30px;
-    flex-basis: calc(100% - 30px);
 }
 
-.project-content{
-    margin: 30px 0px 0px 30px;
+.list-project .item{
+    margin-right: 30px;
+}
+
+.list-project .item:nth-child(3n){
+    margin-right: 0px;
 }
