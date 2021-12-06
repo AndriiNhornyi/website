@@ -5,6 +5,8 @@
     --accent-color: #2196F3;
     --bg-color: #ffffff;
     --bg-order: #2F303A;
+    --padding-iconcolor: #F5F4FA;
+    --secondary-bg-color: #AFB1B8;
 }
 /* *,
 *::before,
@@ -83,8 +85,6 @@ h3{
     align-items: center;
 
     margin-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .site-nav .item + .item{
@@ -105,6 +105,11 @@ h3{
 
 .site-nav .link.current{
     color: var(--accent-color);
+}
+
+.interact{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .list-flex,
@@ -161,6 +166,10 @@ b.join{
  color: var(--accent-color);
 }
 
+.footericon-list{
+    display: flex;
+}
+
 /* Main Content index.html */
 
 /* First Section "Order a Service" */
@@ -205,6 +214,10 @@ b.join{
     display: none;
 }
 
+.feature-list{
+    display: flex;
+}
+
 .feature-list .title,
 .team-list .title{
     color: var(--othertext);
@@ -218,10 +231,35 @@ b.join{
     margin-bottom: 10px;
 }
 
+.feature-list .items + .items{
+    margin-left: 30px;
+}
+
+.feature-icon{
+    padding: 25px 100px 25px 100px;
+    background-color: var(--padding-iconcolor);
+    margin-bottom: 30px;
+}
+
 /* Third Section "Activity" */
+.activity-title{
+    margin-bottom: 50px;
+}
+
+.list-activity{
+    display: flex;
+}
+
+.list-activity .item + .item{
+    margin-left: 30px;
+}
 
 
 /* Fourth Section "Team" */
+/* .section-team{
+    background-color: var(--secondary-bg-color);
+} */
+
 .team-list .title,
 .team-list .text{
     font-weight: 500;
@@ -233,6 +271,25 @@ b.join{
     font-weight: 400;
 }
 
+/* Fifth Section Regular Customers */
+.customers-title{
+ margin-bottom: 50px;
+}
+
+.customers-list{
+    display: flex;
+}
+
+.customers-list .item + .item{
+    margin-left: 30px;
+}
+
+.customers-logo{
+    border: 1px solid var(--secondary-bg-color);
+    border-radius: 4px;
+
+    padding: 16px 32px 16px 32px;
+}
 
 /* Main Content Portfolio.html */
 .portfolio-header{
