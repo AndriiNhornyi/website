@@ -80,6 +80,7 @@ h3{
 .web{
     color:  var(--accent-color);
 }
+
 .nav .site-nav{
     display: flex;
     align-items: center;
@@ -131,6 +132,7 @@ h3{
 }
 
 .link-list-header .icon{
+    display: block;
     margin-right: 10px;
 }
 
@@ -161,9 +163,6 @@ b.join{
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
-}
-.link-communication:hover{
- color: var(--accent-color);
 }
 
 .footericon-list{
@@ -236,6 +235,7 @@ b.join{
 }
 
 .feature-icon{
+    display: block;
     padding: 25px 100px 25px 100px;
     background-color: var(--padding-iconcolor);
     margin-bottom: 30px;
@@ -252,6 +252,10 @@ b.join{
 
 .list-activity .item + .item{
     margin-left: 30px;
+}
+
+.activity-photo{
+    display: block;
 }
 
 
@@ -278,6 +282,7 @@ b.join{
 }
 
 .icon-team{
+    display: block;
     padding: 12px;
 }
 
@@ -303,6 +308,25 @@ b.join{
 
 .photo-team{
     margin-bottom: 30px;
+}
+
+.linkflex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.linkflex-container .link{
+    border: 0px;
+    border-radius: 50%;
+}
+
+.linkflex-container .link:hover,
+.linkflex-container .link:focus{
+    background-color: var(--accent-color);
+}
+
+.linkflex-container .link + .link{
+    margin-left: 10px;
 }
 
 /* Fifth Section Regular Customers */
