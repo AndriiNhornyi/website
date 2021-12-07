@@ -63,6 +63,10 @@ h3{
     align-items: center;
 }
 
+.footer .flex-container{
+    justify-content: space-between;
+}
+
 .nav{
     display: flex;
 }
@@ -140,6 +144,11 @@ footer{
     background-color: var(--bg-order);
 }
 
+.footer-content{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 footer .link{
     color: var(--bg-color);
     font-style: normal;
@@ -153,7 +162,9 @@ footer .link{
 
 .webstudio.footer{
     color: var(--bg-color);
+    margin-bottom: 20px;
 }
+
 b.join{
     color: var(--bg-color);
     text-transform: uppercase;
@@ -165,8 +176,28 @@ b.join{
     margin-bottom: 20px;
 }
 
-.footericon-list{
+.iconfooter-list{
     display: flex;
+}
+
+.iconfooter-list .item + .item{
+    margin-left: 10px;
+}
+
+.iconfooter-list .link{
+    display: block;
+    border: 0px;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.iconfooter-list .link:hover,
+.iconfooter-list .link:focus{
+    background-color: var(--accent-color);
+}
+
+.icon-socialnetworks{
+    display: block;
 }
 
 /* Main Content index.html */
@@ -283,7 +314,6 @@ b.join{
 
 .icon-team{
     display: block;
-    padding: 12px;
 }
 
 .icon-team:not(:last-child){
@@ -316,8 +346,10 @@ b.join{
 }
 
 .linkflex-container .link{
+    display: block;
     border: 0px;
     border-radius: 50%;
+    padding: 12px;
 }
 
 .linkflex-container .link:hover,
