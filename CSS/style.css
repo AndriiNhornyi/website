@@ -412,7 +412,8 @@ b.subscribe{
     margin-left: 30px;
 }
 
-.customers-logo{
+.link.logo{
+    display: block;
     border: 1px solid var(--secondary-bg-color);
     border-radius: 4px;
 
