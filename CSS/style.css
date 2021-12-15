@@ -40,10 +40,6 @@ h3 {
     margin-right: auto;
 }
 
-.centred {
-    text-align: center;
-}
-
 .list {
     list-style: none;
     margin-top: 0px;
@@ -249,22 +245,33 @@ b.subscribe {
 
 /* First Section "Order a Service" */
 .order {
-    /* display: flex; */
-    /* align-items: center; */
     min-height: 600px;
-    min-width: 1200px;
+    display: flex;
     background-color: var(--bg-order);
+}
+
+.background-img{
+    min-width: 1600px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
     background-image: linear-gradient(
         to right, 
         rgba(47, 48, 58, 0.4),  
         rgba(47, 48, 58, 0.4)
     ),
-    url(../img/Img-background.svg);
+    url(../img/Img-background.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+}
+
+.centred {
+    text-align: center;
 }
 
 .effective-solution {
