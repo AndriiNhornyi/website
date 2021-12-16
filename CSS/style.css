@@ -133,28 +133,25 @@ h3 {
     margin-left: auto;
 }
 
-.link-contact .icon{
-    align-self: center;
-    width: 16px;
-    height: 16px;
-    fill: var(--maintexst);
-    margin-right: 10px;
-}
-
-.link-contact .icon:hover{
-    fill: var(--accent-color);
-}
-
 .link-contact{
     color: var(--maintexst);
+}
+
+
+.link-contact .icon{
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    margin-right: 10px;
 }
 
 .list-contacts .item + .item{
     margin-left: 30px;
 }
 
-.list-contacts .link-contact:hover,
-.list-contacts .link-contact:focus,
+.list .link-contact:hover,
+.list .link-contact:focus,
 .list .contact:hover,
 .list .contact:focus,
 .address .link:hover,
