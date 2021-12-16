@@ -133,21 +133,33 @@ h3 {
     margin-left: auto;
 }
 
+.link-contact .icon{
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    fill: var(--maintexst);
+    margin-right: 10px;
+}
+
+.link-contact .icon:hover{
+    fill: var(--accent-color);
+}
+
+.link-contact{
+    color: var(--maintexst);
+}
+
 .list-contacts .item + .item{
     margin-left: 30px;
 }
 
-.link-contact:hover,
-.link-contact:focus,
+.list-contacts .link-contact:hover,
+.list-contacts .link-contact:focus,
 .list .contact:hover,
 .list .contact:focus,
 .address .link:hover,
 .address .link:focus {
     color: var(--accent-color);
-}
-
-.link-contact .icon {
-    margin-right: 10px;
 }
 
 footer {
@@ -336,7 +348,7 @@ b.subscribe {
     flex-direction: column;
 }
 
-.feature-list .item::before {
+/* .feature-list .item::before {
     width: 270px;
     height: 120px;
     content: '';
@@ -366,6 +378,14 @@ b.subscribe {
     background-image: url(../img/icon-modern_technologies.svg);
     background-repeat: no-repeat;
     background-position: center;
+} */
+
+.feature-list .bg-icon{
+   width: 270px;
+   height: 120px;
+   background-color: var(--padding-iconcolor);
+   margin-bottom: 30px;
+   padding: 25px 100px 25px 100px;
 }
 
 /* .feature-list .item:not(:nth-child(4n)) {
@@ -455,6 +475,8 @@ b.subscribe {
 }
 
 .linkflex-container .link {
+    width: 44px;
+    height: 44px;
     display: block;
     border: 0px;
     border-radius: 50%;
