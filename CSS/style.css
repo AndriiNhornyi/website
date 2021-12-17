@@ -11,6 +11,7 @@
     --firs-icons-color: #AFB1B8;
     --second-icons-color: #ffffff;
     --icons-color-accent: #ffffff;
+    --bg-button-colorhover: #188CE8;
 }
 
 /* *,
@@ -261,6 +262,11 @@ b.subscribe {
     margin-right: 10px;
 }
 
+.button-div .button:hover,
+.button-div .button:focus {
+    background-color: var(--bg-button-colorhover);
+}
+
 /* Main Content index.html */
 
 /* First Section "Order a Service" */
@@ -320,6 +326,11 @@ b.subscribe {
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+
+.order .link:hover,
+.order .link:focus {
+    background: var(--bg-button-colorhover);
 }
 
 /* Second Section "Features" and Third Section "Activity" and Fourth Section "Team" */
