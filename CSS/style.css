@@ -160,7 +160,6 @@ h3 {
     color: var(--maintexst);
 }
 
-
 .link-contact .icon{
     fill: currentColor;
     width: 16px;
@@ -181,6 +180,41 @@ h3 {
 .address .link:focus {
     color: var(--accent-color);
 }
+
+/* .item-popup {
+    position: relative;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(0%, -50%);
+
+    background-color: var(--bg-color);
+    border-radius: 4px;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.item-popup:hover .popup {
+    opacity: 1;
+    pointer-events: painted;
+}
+
+.popup .item:nth-child(n + 2) {
+    margin-left: 0px;
+    padding-top: 0px;
+}
+
+.popup .item {
+    padding: 10px 10px;
+}
+
+.popup .link {
+    padding: 0px;
+} */
 
 footer {
     background-color: var(--bg-order);
