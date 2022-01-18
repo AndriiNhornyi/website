@@ -72,7 +72,7 @@
                 <div class="background-img">
                     <div class="container centred">
                         <h1 class="effective-solution">Ефективне рішення для вашого бізнесу</h1>
-                        <a href="" class="link button-link">Замовити послугу</a>
+                        <button data-modal-open class="button-order">Замовити послугу</button>
                     </div>
                 </div>
             </section>
@@ -136,19 +136,37 @@
                     <ul class="list-activity list">
                         <li class="item">
                             <a href="" class="link">
-                                <img src="./img/img-desktop.jpg" alt="Десктопні додатки" class="activity-photo">
+                                <div class="position-div-activity">
+                                    <img src="./img/img-desktop.jpg" alt="Десктопні додатки" class="activity-photo">
+
+                                    <div class="description-img-activity">
+                                        <p class="text text-description-activity">Десктопні додатки</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
     
                         <li class="item">
                             <a href="" class="link">
-                                <img src="./img/img-mobile.jpg" alt="Телефонні додатки" class="activity-photo">
+                                <div class="position-div-activity">
+                                    <img src="./img/img-mobile.jpg" alt="Телефонні додатки" class="activity-photo">
+
+                                    <div class="description-img-activity">
+                                        <p class="text text-description-activity">Мобільні додатки</p>
+                                    </div>
+                                </div>
                             </a>
                         </li>
     
                         <li class="item">
                             <a href="" class="link">
-                                <img src="./img/img-design.jpg" alt="Дизайнерські рішення" class="activity-photo">
+                                <div class="position-div-activity">
+                                    <img src="./img/img-design.jpg" alt="Дизайнерські рішення" class="activity-photo">
+
+                                    <div class="description-img-activity">
+                                        <p class="text text-description-activity">Дизайнерські рішення</p>
+                                    </div> 
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -414,14 +432,31 @@
         </footer>
 
     <!-- Modal -->
-        <div class="backdrop is-hidden">
+        <div data-modal class="backdrop is-hidden">
             <div class="modal">
-                <button type="button" class="button" width="30" height="30">
+                <button data-modal-close type="button" class="button" width="30" height="30">
                     <svg class="icon" width="11" height="11">
                         <use href="./img/all-icon.svg#icon-closebtn"></use>
                     </svg>
                 </button>
             </div>
         </div>
+    
+<script>
+    (() => {
+        const refs = {
+            openModalBtn: document.querySelector('[data-modal-open]'),
+            closeModalBtn: document.querySelector('[data-modal-close]'),
+            modal: document.querySelector('[data-modal]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+            refs.modal.classList.toggle('is-hidden');
+        }
+    })();
+</script>
 </body>
 </html>
