@@ -442,8 +442,33 @@
         </footer>
 
     <!-- Modal -->
-        <div data-modal class="backdrop is-hidden">
+        <div data-modal class="backdrop">
+            
             <div class="modal">
+                <div class="centred title">
+                    <b class="leave-information-title">Залиште свої дані, ми Вам передзвонимо</b>
+                </div>
+                <form action="#" class="modal-form">
+                    <div class="elements-of-form">
+                        <label for="name-modal">Ім'я</label>
+                        <input type="text" name="name" class="input" id="name-modal">
+                    </div>
+                    
+                    <div class="elements-of-form">
+                        <label for="tel-modal">Телефон</label>
+                        <input type="tel" name="telephon" class="input" id="tel-modal">
+                    </div>
+                    
+                    <div class="elements-of-form">
+                        <label for="email-modal">Пошта</label>
+                        <input type="email" name="e-mail" class="input" id="email-modal">
+                    </div>
+                  
+                    <div class="elements-of-form">
+                        <label for="textarea-modal">Коментарій</label>
+                        <textarea name="" id="textarea-modal" class="textarea"></textarea>
+                    </div>
+                </form>
                 <button data-modal-close type="button" class="button" width="30" height="30">
                     <svg class="icon" width="11" height="11">
                         <use href="./img/all-icon.svg#icon-closebtn"></use>
