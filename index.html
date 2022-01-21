@@ -442,7 +442,7 @@
         </footer>
 
     <!-- Modal -->
-        <div data-modal class="backdrop">
+        <div data-modal class="backdrop is-hidden">
             
             <div class="modal">
                 <div class="centred title">
@@ -450,24 +450,39 @@
                 </div>
                 <form action="#" class="modal-form">
                     <div class="elements-of-form">
-                        <label for="name-modal">Ім'я</label>
-                        <input type="text" name="name" class="input" id="name-modal">
+                        <input type="text" name="name" class="input" id="name-modal" placeholder=" ">
+                        <label for="name-modal" class="label-modal">Ім'я</label>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./img/all-icon.svg#icon-person_modal"></use>
+                        </svg>
                     </div>
                     
                     <div class="elements-of-form">
-                        <label for="tel-modal">Телефон</label>
-                        <input type="tel" name="telephon" class="input" id="tel-modal">
+                        <input type="tel" name="telephon" class="input" id="tel-modal" placeholder=" ">
+                        <label for="tel-modal" class="label-modal">Телефон</label>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./img/all-icon.svg#icon-phone_modal"></use>
+                        </svg>
                     </div>
                     
                     <div class="elements-of-form">
-                        <label for="email-modal">Пошта</label>
-                        <input type="email" name="e-mail" class="input" id="email-modal">
+                        <input type="email" name="e-mail" class="input" id="email-modal" placeholder=" ">
+                        <label for="email-modal" class="label-modal">Пошта</label>
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./img/all-icon.svg#icon-email_modal"></use>
+                        </svg>
                     </div>
                   
-                    <div class="elements-of-form">
-                        <label for="textarea-modal">Коментарій</label>
-                        <textarea name="" id="textarea-modal" class="textarea"></textarea>
+                    <div class="elements-of-form textarea-modal-div">
+                        <label for="textarea-modal" class="textarea-label-modal">Коментарій</label>
+                        <textarea name="" id="textarea-modal" class="textarea" placeholder="Введіть текст"></textarea>
                     </div>
+
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                    
+
                 </form>
                 <button data-modal-close type="button" class="button" width="30" height="30">
                     <svg class="icon" width="11" height="11">
