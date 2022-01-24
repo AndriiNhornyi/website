@@ -16,6 +16,17 @@
     --backdrop-color: rgba(0, 0, 0, 0.2);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* *,
 *::before,
 *::after {
@@ -428,10 +439,6 @@ b.subscribe {
     line-height: 1.16;
 }
 
-.section-title.features {
-    display: none;
-}
-
 .feature-list{
     display: flex;
 }
@@ -680,17 +687,18 @@ b.subscribe {
     margin-left: 8px;
 }
 
-.portfolio-header {
-    margin-bottom: 94px;
+.button-list .item {
+    align-self: center;
 }
 
-.portfolio-title {
-    display: none;
+.portfolio-header {
+    margin-bottom: 94px;
 }
 
 .item .button {
     min-height: 30px;
 
+    color: var(--othertext);
     background-color: var(--padding-iconcolor);
 
     font-weight: 500;
