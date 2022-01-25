@@ -478,14 +478,22 @@
                         <textarea name="" id="textarea-modal" class="textarea" placeholder="Введіть текст"></textarea>
                     </div>
 
-                    <div>
-                        <input type="checkbox">
+                    <div class="checkbox-of-form">
+                        <input type="checkbox" class="modal-input-checkbox visually-hidden" id="modal-checkbox-acceptance">
+                        <label for="modal-checkbox-acceptance" class="checkbox-title"
+                            >Погоджуюся з розсилкою та приймаю
+                                <a href="" class="link">Умови договору</a>
+                                <span class="checkbox"></span>
+                        </label>
                     </div>
-                    
 
+                    <div class="button-of-form">
+                        <button type="submit" class="form-button-submit">Відправити</button>
+                    </div>
                 </form>
+
                 <button data-modal-close type="button" class="button" width="30" height="30">
-                    <svg class="icon" width="11" height="11">
+                    <svg class="icon modal-button-icon" width="11" height="11">
                         <use href="./img/all-icon.svg#icon-closebtn"></use>
                     </svg>
                 </button>
