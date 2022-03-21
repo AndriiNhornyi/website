@@ -923,12 +923,17 @@
 }
 
 .modal-input-checkbox:focus + .checkbox-title .checkbox {
-    border: none;
-    outline: 2px solid var(--othertext);
+    /* border: none; */
+    outline: 2px solid #757575;
 }
 
 .checkbox-of-form {
     margin-bottom: 30px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
 }
 
 .form-button-submit {
